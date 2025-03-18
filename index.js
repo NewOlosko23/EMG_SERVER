@@ -7,7 +7,8 @@ dotenv.config();
 
 import Auth from "./routes/authRoutes.js"
 import Music from "./routes/musicRoutes.js"
- 
+import Artist from "./routes/artistRoutes.js"
+
 const app = express();
 
 app.use(express.json());
@@ -35,10 +36,11 @@ mongoose
     process.exit(1);
   });
 
-app.get("/api/v1", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({ message: "API is working well!" });
 });
 
 
 app.use("/api/v1/auth", Auth)
 app.use("/api/v1/music/", Music)
+app.use("/api/v1/artist/", Artist)
