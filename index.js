@@ -5,9 +5,9 @@ import mongoose from 'mongoose';
 
 dotenv.config();
 
-import Auth from "./routes/authRoutes.js"
-import Music from "./routes/musicRoutes.js"
-import Artist from "./routes/artistRoutes.js"
+import Auth from "./routes/authRoutes.js";
+import Music from "./routes/musicRoutes.js";
+import Artist from "./routes/artistRoutes.js";
 
 const app = express();
 
