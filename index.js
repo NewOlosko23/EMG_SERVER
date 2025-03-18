@@ -35,7 +35,7 @@ mongoose
     process.exit(1);
   });
 
-app.get("/", (req, res) => {
+app.get("/api/v1", (req, res) => {
   res.status(200).json({ message: "API is working well!" });
 });
 
